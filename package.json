@@ -1,26 +1,22 @@
 {
 	"name": "profile-generator",
 	"version": "1.0.0",
-	"description": "node app for creating pdf profile pages",
+	"description": "node app for creating html profile pages",
 	"main": "app.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node app.js"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/rlgerma92/profileGenerator.git"
 	},
-	"keywords": [
-		"node",
-		"inquirer"
-	],
+	"keywords": [ "node", "inquirer" ],
 	"author": "rlgerma92",
 	"license": "ISC",
 	"dependencies": {
 		"axios": "^0.19.1",
-		"inquirer": "^7.0.3",
-		"path": "^0.12.7",
-		"phantom-html-to-pdf": "^0.6.0"
+		"inquirer": "^7.0.3"
 	},
 	"bugs": {
 		"url": "https://github.com/rlgerma92/profileGenerator/issues"
