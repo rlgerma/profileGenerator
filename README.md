@@ -1,4 +1,10 @@
 # profileGenerator
-A command-line application that dynamically generates a PDF profile from a GitHub username.
+A node command-line application that generates a dynamic HTML profile from a GitHub username.
 
-# revisted on 1/12/20 future developments will be released soon
+# Install
+npm install,
+node app.js
+
+follow prompts
+
+## must have a github account for it to pull (axios) info from.
