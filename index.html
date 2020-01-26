@@ -1,32 +1,4 @@
-const colors = {
-  green: {
-    wrapperBackground: "#E6E1C3",
-    headerBackground: "#C1C72C",
-    headerColor: "black",
-    photoBorderColor: "#black"
-  },
-  blue: {
-    wrapperBackground: "#5F64D3",
-    headerBackground: "#26175A",
-    headerColor: "white",
-    photoBorderColor: "#73448C"
-  },
-  pink: {
-    wrapperBackground: "#879CDF",
-    headerBackground: "#FF8374",
-    headerColor: "white",
-    photoBorderColor: "#FEE24C"
-  },
-  red: {
-    wrapperBackground: "#DE9967",
-    headerBackground: "#870603",
-    headerColor: "white",
-    photoBorderColor: "white"
-  }
-};
-
-function generateHTML(data) {
-  return `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
    <head>
       <meta charset="UTF-8" />
@@ -34,7 +6,7 @@ function generateHTML(data) {
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"/>
       <link href="https://fonts.googleapis.com/css?family=BioRhyme|Cabin&display=swap" rel="stylesheet">
-      <title>Document</title>
+      <title>Your Profile</title>
       <style>
           @page {
             margin: 0;
@@ -52,7 +24,7 @@ function generateHTML(data) {
          height: 100%;
          }
          .wrapper {
-         background-color: ${colors[data.color].wrapperBackground};
+         background-color: #5F64D3;
          padding-top: 100px;
          }
          body {
@@ -94,19 +66,20 @@ function generateHTML(data) {
          display: flex;
          justify-content: center;
          flex-wrap: wrap;
-         background-color: ${colors[data.color].headerBackground};
-         color: ${colors[data.color].headerColor};
+         background-color: #26175A;
+         color: #ffff;
          padding: 10px;
          width: 95%;
          border-radius: 6px;
          }
          .photo-header img {
+         
          width: 250px;
          height: 250px;
          border-radius: 50%;
          object-fit: cover;
          margin-top: -75px;
-         border: 6px solid ${colors[data.color].photoBorderColor};
+         border: 6px solid #73448C;
          box-shadow: rgba(0, 0, 0, 0.3) 4px 1px 20px 4px;
          }
          .photo-header h1, .photo-header h2 {
@@ -119,8 +92,11 @@ function generateHTML(data) {
          .links-nav {
          width: 100%;
          text-align: center;
+         background-color: #ffff;
          padding: 20px 0;
          font-size: 1.1em;
+         border-radius: 24px;
+         margin-top:4px
          }
          .nav-link {
          display: inline-block;
@@ -149,8 +125,8 @@ function generateHTML(data) {
          .card {
            padding: 20px;
            border-radius: 6px;
-           background-color: ${colors[data.color].headerBackground};
-           color: ${colors[data.color].headerColor};
+           background-color: #26175A;
+           color: [object Object];
            margin: 20px;
          }
          
@@ -170,5 +146,57 @@ function generateHTML(data) {
             zoom: .75; 
           } 
          }
-      </style>`
-        }
+      </style>
+    </head>
+      <body>
+        <div class="wrapper">
+          <div class="container">
+            <div class = "photo-header">
+              <img src = "https://avatars2.githubusercontent.com/u/54249860?v=4" alt = "test">
+            </div> <br><br><br><br>
+            <h1>
+              hi!<br>
+            </h1>
+            <h2>
+              My name is <span class="links-nav"> Richard Germaine</span>
+            </h2> <br><br>
+            <h3>
+              I'm from Denver, Co USA
+            </h3>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class ="col-md">
+                <h6>
+                  I am currently a full stack development student at University of Denver Coding Bootcamp. 
+                </h6>
+              </div>
+              <div class="col-md">
+                <h5>
+                <ul>
+                  <li>
+                      I have 19 repos on GitHub 
+                  </li>
+                  <br>
+                  <li>
+                    I'm following 5 Users 
+                  </li>
+                  <br>
+                  <li>
+                    and I'm following 4 Users 
+                  </li>
+                </ul>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class= "links-nav">
+              <br><br>
+              <a href="https://richardgermaine.herokuapp.com/">
+              <h3>Check out my portfolio!</h3></a>
+            </div>
+          </div>
+        </div>
+      </body>
+    </html>

@@ -1,36 +1,29 @@
 {
-  "name": "profile-generator",
-  "version": "1.0.0",
-  "description": "node app for creating pdf profile pages",
-  "main": "app.js",
-  "scripts": {
-    "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rlgerma92/profileGenerator.git"
-  },
-  "keywords": [
-    "node",
-    "inquirer",
-    "webpack"
-  ],
-  "author": "rlgerma92",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "^0.19.1",
-    "inquirer": "^7.0.3",
-    "lodash": "^4.17.15",
-    "path": "^0.12.7",
-    "phantom-html-to-pdf": "^0.6.0"
-  },
-  "devDependencies": {
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2"
-  },
-  "bugs": {
-    "url": "https://github.com/rlgerma92/profileGenerator/issues"
-  },
-  "homepage": "https://github.com/rlgerma92/profileGenerator#readme"
+	"name": "profile-generator",
+	"version": "1.0.0",
+	"description": "node app for creating pdf profile pages",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rlgerma92/profileGenerator.git"
+	},
+	"keywords": [
+		"node",
+		"inquirer"
+	],
+	"author": "rlgerma92",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^0.19.1",
+		"inquirer": "^7.0.3",
+		"path": "^0.12.7",
+		"phantom-html-to-pdf": "^0.6.0"
+	},
+	"bugs": {
+		"url": "https://github.com/rlgerma92/profileGenerator/issues"
+	},
+	"homepage": "https://github.com/rlgerma92/profileGenerator#readme"
 }
