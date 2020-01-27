@@ -3,7 +3,7 @@ A node command-line application that generates a dynamic HTML profile from a Git
 
 # Install
 npm install,
-node app.js
+npm start
 
 follow prompts
 
