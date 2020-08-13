@@ -7,6 +7,7 @@ npm start
 
 follow prompts
 
-## must have a github account for it to pull (axios) info from.
+## must have a github account for it to pull info from.
 
-## Side Note - This was intended to be able to convert the html to a pdf but due to deprecated npm packages required I decided to abandon this aspect for security concerns.
+### expanded this idea into bootspacetwo. Check that out [here](http://github.com/rlgerma92/bootspacetwo)
+
